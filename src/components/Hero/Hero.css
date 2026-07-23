@@ -1,0 +1,136 @@
+.hero {
+  width: min(100% - 112px, 1320px);
+  min-height: calc(100vh - 80px);
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-content > p:first-child {
+  margin-bottom: 16px;
+
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero h1 {
+  margin-bottom: 16px;
+
+  color: var(--text-primary);
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.hero h2 {
+  margin-bottom: 24px;
+
+  color: var(--text-secondary);
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 500;
+}
+
+.hero-content p:last-child {
+  max-width: 560px;
+
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.hero {
+  width: min(100% - 112px, 1320px);
+  min-height: calc(100vh - 80px);
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-content > p:first-child {
+  margin-bottom: 16px;
+
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero h1 {
+  margin-bottom: 16px;
+
+  color: var(--text-primary);
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.hero h2 {
+  margin-bottom: 24px;
+
+  color: var(--text-secondary);
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 500;
+}
+
+.hero-content p:last-child {
+  max-width: 560px;
+
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 24px;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #061016;
+}
+
+.btn-primary:hover {
+  background-color: #5eead4;
+}
+
+.btn-secondary {
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
