@@ -21,11 +21,11 @@ function Hero() {
           </p>
 
           <div className="flex gap-4">
-            <a href="#projetos" className="px-6 py-3 rounded-md bg-[var(--primary)] text-[var(--background)] font-medium hover:opacity-90 transition">
+            <a href="#projects" className="px-6 py-3 rounded-md bg-[var(--primary)] text-[var(--background)] font-medium hover:opacity-90 transition">
               Ver Projetos
             </a>
 
-            <a href="#contato" className="px-6 py-3 rounded-md border border-[var(--border)] text-[var(--text-primary)] font-medium hover:bg-[var(--surface)] transition">
+            <a href="#contact" className="px-6 py-3 rounded-md border border-[var(--border)] text-[var(--text-primary)] font-medium hover:bg-[var(--surface)] transition">
               Entre em Contato
             </a>
           </div>

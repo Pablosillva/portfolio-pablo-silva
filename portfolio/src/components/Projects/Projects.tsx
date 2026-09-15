@@ -31,7 +31,7 @@ const projects: Project[] = [
       "Este portfólio, desenvolvido para apresentar minha transição de carreira para desenvolvedor Full Stack.",
     technologies: ["React", "TypeScript", "Tailwind CSS"],
     githubUrl: "https://github.com/Pablosillva/portfolio-pablo-silva",
-    liveUrl: "",
+    liveUrl: "https://portfolio-pablosilva.vercel.app/",
   },
 ];
 
