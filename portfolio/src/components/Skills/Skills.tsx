@@ -1,3 +1,5 @@
+import RevealOnScroll from "../RevealOnScroll/RevealOnScroll";
+
 interface Skill {
   name: string;
   level: "Iniciante" | "Intermediário" | "Avançado";
@@ -58,33 +60,35 @@ function Skills() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-        {skillGroups.map((group) => (
-          <div key={group.category}>
-            <h3 className="mb-6 text-lg font-semibold text-[var(--text-primary)]">
-              {group.category}
-            </h3>
+  {skillGroups.map((group, index) => (
+    <RevealOnScroll key={group.category} delay={index * 150}>
+      <div>
+        <h3 className="mb-6 text-lg font-semibold text-[var(--text-primary)]">
+          {group.category}
+        </h3>
 
-            <div className="flex flex-col gap-3">
-              {group.skills.map((skill) => (
-                <div
-                  key={skill.name}
-                  className="flex items-center justify-between px-4 py-3 border border-[var(--border)] rounded-lg"
-                >
-                  <span className="text-sm text-[var(--text-primary)]">
-                    {skill.name}
-                  </span>
+        <div className="flex flex-col gap-3">
+          {group.skills.map((skill) => (
+            <div
+              key={skill.name}
+              className="flex items-center justify-between px-4 py-3 border border-[var(--border)] rounded-lg"
+            >
+              <span className="text-sm text-[var(--text-primary)]">
+                {skill.name}
+              </span>
 
-                  <span
-                    className={`px-2.5 py-1 rounded text-xs font-medium ${levelStyles[skill.level]}`}
-                  >
-                    {skill.level}
-                  </span>
-                </div>
-              ))}
+              <span
+                className={`px-2.5 py-1 rounded text-xs font-medium ${levelStyles[skill.level]}`}
+              >
+                {skill.level}
+              </span>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+    </RevealOnScroll>
+  ))}
+</div>
     </section>
   );
 }

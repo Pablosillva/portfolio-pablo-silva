@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import RevealOnScroll from "../RevealOnScroll/RevealOnScroll.tsx";
 
 interface Project {
   title: string;
@@ -50,10 +51,12 @@ function Projects() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
-        ))}
-      </div>
+  {projects.map((project, index) => (
+    <RevealOnScroll key={project.title} delay={index * 100}>
+      <ProjectCard project={project} />
+    </RevealOnScroll>
+  ))}
+</div>
     </section>
   );
 }
