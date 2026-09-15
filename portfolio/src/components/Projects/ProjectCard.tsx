@@ -17,8 +17,8 @@ function ProjectCard({ project }: ProjectCardProps) {
         <span className="text-xs text-[var(--text-secondary)]">Projeto</span>
 
         <div className="flex gap-3">
-          
-            href={project.githubUrl}
+
+          <a href={project.githubUrl}
             target="_blank"
             className="text-[var(--text-secondary)] text-[13px] no-underline hover:text-[var(--primary)] transition-colors duration-200"
           >
@@ -26,8 +26,8 @@ function ProjectCard({ project }: ProjectCardProps) {
           </a>
 
           {project.liveUrl && (
-            
-              href={project.liveUrl}
+
+            <a href={project.liveUrl}
               target="_blank"
               className="text-[var(--text-secondary)] text-[13px] no-underline hover:text-[var(--primary)] transition-colors duration-200"
             >
@@ -57,7 +57,7 @@ function ProjectCard({ project }: ProjectCardProps) {
           ))}
         </div>
       </div>
-    </article>
+    </article >
   );
 }
 

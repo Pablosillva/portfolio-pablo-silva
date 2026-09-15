@@ -39,9 +39,9 @@ function Projects() {
   return (
     <section id="projects" className="max-w-[1320px] mx-auto px-14 py-40">
       <div className="max-w-[700px] mb-20">
-        <p className="text-[var(--primary)] text-sm font-medium mb-4">
-          Projetos
-        </p>
+        <p className="mb-6 text-[var(--primary)] text-sm font-semibold uppercase tracking-[2px]">
+  Projetos
+</p>
 
         <h2 className="text-4xl md:text-6xl leading-[1.05] tracking-tighter text-[var(--text-primary)]">
           Algumas coisas que
