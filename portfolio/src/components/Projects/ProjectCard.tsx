@@ -21,9 +21,11 @@ function ProjectCard({ project }: ProjectCardProps) {
             GitHub
           </a>
 
-          <a href={project.liveUrl} target="_blank">
-            Live
-          </a>
+          {project.liveUrl && (
+            <a href={project.liveUrl} target="_blank">
+              Live
+            </a>
+          )}
         </div>
       </div>
 
