@@ -4,23 +4,24 @@ function Hero() {
       <div className="grid md:grid-cols-2 gap-12 items-center w-full">
         {/* Coluna da esquerda - texto */}
         <div className="max-w-[700px]">
-          <p className="mb-4 text-[var(--primary)] text-base font-medium">
+          <p className="mb-4 text-[var(--primary)] text-base font-medium animate-[fadeInUp_0.6s_ease-out]">
             Olá, eu sou
           </p>
 
-          <h1 className="mb-4 text-[var(--text-primary)] text-4xl sm:text-5xl md:text-7xl leading-none tracking-tighter">
+          <h1 className="mb-4 text-[var(--text-primary)] text-4xl sm:text-5xl md:text-7xl leading-none tracking-tighter animate-[fadeInUp_0.6s_ease-out_0.1s_backwards]">
             Pablo Silva
           </h1>
 
-          <h2 className="mb-6 text-[var(--text-secondary)] text-xl sm:text-2xl md:text-4xl font-medium">
+          <h2 className="mb-6 text-[var(--text-secondary)] text-xl sm:text-2xl md:text-4xl font-medium animate-[fadeInUp_0.6s_ease-out_0.2s_backwards]">
             Desenvolvedor Full Stack Junior
           </h2>
 
-          <p className="max-w-[560px] mb-8 text-[var(--text-secondary)] text-base leading-[1.8]">
+          <p className="max-w-[560px] mb-8 text-[var(--text-secondary)] text-base leading-[1.8] animate-[fadeInUp_0.6s_ease-out_0.3s_backwards]">
             Construo experiências digitais modernas e aplicações web funcionais utilizando tecnologias modernas.
           </p>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 animate-[fadeInUp_0.6s_ease-out_0.4s_backwards]">
+
             <a href="#projects" className="px-6 py-3 rounded-md bg-[var(--primary)] text-[var(--background)] font-medium hover:opacity-90 transition">
               Ver Projetos
             </a>
