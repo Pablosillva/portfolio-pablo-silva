@@ -1,4 +1,3 @@
-import "./Projects.css";
 import ProjectCard from "./ProjectCard";
 
 interface Project {
@@ -38,22 +37,22 @@ const projects: Project[] = [
 
 function Projects() {
   return (
-    <section id="projects" className="projects">
-      <div className="projects-container">
-        <div className="projects-header">
-          <p className="section-label">Projetos</p>
+    <section id="projects" className="max-w-[1320px] mx-auto px-14 py-40">
+      <div className="max-w-[700px] mb-20">
+        <p className="text-[var(--primary)] text-sm font-medium mb-4">
+          Projetos
+        </p>
 
-          <h2>
-            Algumas coisas que
-            <span> construí.</span>
-          </h2>
-        </div>
+        <h2 className="text-4xl md:text-6xl leading-[1.05] tracking-tighter text-[var(--text-primary)]">
+          Algumas coisas que
+          <span className="text-[var(--text-secondary)]"> construí.</span>
+        </h2>
+      </div>
 
-        <div className="projects-grid">
-          {projects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
-          ))}
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((project) => (
+          <ProjectCard key={project.title} project={project} />
+        ))}
       </div>
     </section>
   );

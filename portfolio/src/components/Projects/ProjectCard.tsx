@@ -12,31 +12,48 @@ interface ProjectCardProps {
 
 function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="project-card">
-      <div className="project-card-header">
-        <span>Projeto</span>
+    <article className="min-h-[360px] p-6 flex flex-col justify-between bg-[var(--surface)] border border-[var(--border)] rounded-[10px] transition-all duration-200 hover:-translate-y-1.5 hover:border-[var(--primary)]">
+      <div className="flex items-center justify-between">
+        <span className="text-xs text-[var(--text-secondary)]">Projeto</span>
 
-        <div className="project-links">
-          <a href={project.githubUrl} target="_blank">
+        <div className="flex gap-3">
+          
+            href={project.githubUrl}
+            target="_blank"
+            className="text-[var(--text-secondary)] text-[13px] no-underline hover:text-[var(--primary)] transition-colors duration-200"
+          >
             GitHub
           </a>
 
           {project.liveUrl && (
-            <a href={project.liveUrl} target="_blank">
+            
+              href={project.liveUrl}
+              target="_blank"
+              className="text-[var(--text-secondary)] text-[13px] no-underline hover:text-[var(--primary)] transition-colors duration-200"
+            >
               Live
             </a>
           )}
         </div>
       </div>
 
-      <div className="project-card-content">
-        <h3>{project.title}</h3>
+      <div>
+        <h3 className="mb-4 text-[var(--text-primary)] text-2xl">
+          {project.title}
+        </h3>
 
-        <p>{project.description}</p>
+        <p className="mb-6 text-[var(--text-secondary)] text-[15px] leading-[1.7]">
+          {project.description}
+        </p>
 
-        <div className="project-technologies">
+        <div className="flex flex-wrap gap-2">
           {project.technologies.map((technology) => (
-            <span key={technology}>{technology}</span>
+            <span
+              key={technology}
+              className="px-2.5 py-1.5 bg-[#111c2b] rounded text-[var(--text-secondary)] text-xs"
+            >
+              {technology}
+            </span>
           ))}
         </div>
       </div>
