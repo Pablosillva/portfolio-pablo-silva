@@ -16,7 +16,7 @@ const links = [
         icon: Link2,
         label: "LinkedIn",
         value: "linkedin.com/in/pablo-duarte",
-        href: "https://www.linkedin.com/in/pablo-duarte-86a54321a/",
+        href: "https://www.linkedin.com/in/pablo-silva-86a54321a/",
     },
 ];
 

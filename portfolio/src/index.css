@@ -20,6 +20,20 @@ body {
   font-family: Arial, sans-serif;
 }
 
+:root.light {
+  --background: #cafad1;
+  --surface: #cbe4cf;
+  --primary: #0d9488;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border: #c1c2c5;
+}
+
+body {
+  background-color: var(--background);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
